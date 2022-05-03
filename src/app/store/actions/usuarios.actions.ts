@@ -5,7 +5,7 @@ export const cargarUsuarios = createAction('[Usuarios] Cargar Usuarios');
 
 export const cargarUsuariosSuccess = createAction(
   '[Usuarios] Cargar Usuarios Success',
-  props<{ usuarios: Usuario[] }>()
+  props<{ usuarios: [] }>()
 );
 
 export const cargarUsuariosError = createAction(
