@@ -15,6 +15,10 @@ import { StoreModule } from '@ngrx/store';
 import { appReducers } from './store/app.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
+// Effects
+import { EffectsModule } from '@ngrx/effects';
+import { EffectsArray } from './store/effects/index';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -24,6 +28,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     SharedModule,
     UsuariosModule,
     StoreModule.forRoot(appReducers),
+    EffectsModule.forRoot(EffectsArray),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: false,
