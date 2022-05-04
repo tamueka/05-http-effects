@@ -7,6 +7,7 @@ import { map } from 'rxjs/operators';
 })
 export class UsuarioService {
   private url = 'https://reqres.in/api';
+  private id = '1';
   constructor(private http: HttpClient) {}
 
   getUsers() {
